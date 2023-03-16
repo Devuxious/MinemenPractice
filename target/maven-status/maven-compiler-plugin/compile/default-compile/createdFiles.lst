@@ -277,6 +277,7 @@ rip\crystal\practice\api\chat\ChatUtil.class
 rip\crystal\practice\game\kit\menu\KitEditorMenu.class
 rip\crystal\practice\game\kit\KitEditorListener.class
 rip\crystal\practice\api\utilities\JavaUtil.class
+rip\crystal\practice\essentials\command\player\KitEditorCommand.class
 rip\crystal\practice\essentials\chat\impl\command\SlowChatCommand.class
 rip\crystal\practice\player\nametags\NametagUpdate.class
 rip\crystal\practice\player\profile\menu\matchmaking\MatchMakingMenu.class
@@ -362,6 +363,7 @@ rip\crystal\practice\game\event\game\map\EventGameMap.class
 rip\crystal\practice\game\kit\menu\KitEditorMenu$CancelButton.class
 rip\crystal\practice\player\party\classes\bard\BardEffect.class
 rip\crystal\practice\player\profile\file\impl\MongoDBIProfile.class
+rip\crystal\practice\database\MongoConnection.class
 rip\crystal\practice\essentials\command\donator\RenameCommand.class
 rip\crystal\practice\api\command\BaseCommand.class
 rip\crystal\practice\match\duel\menu\DuelSelectKitMenu.class

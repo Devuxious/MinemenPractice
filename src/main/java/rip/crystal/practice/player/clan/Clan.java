@@ -184,7 +184,7 @@ public class Clan {
 
     public static void init(){
         if (Profile.getIProfile() instanceof MongoDBIProfile) {
-            collection = cPractice.get().getMongoDatabase().getCollection("clans");
+            collection = cPractice.get().getMongoConnection().getMongoDatabase().getCollection("clans");
             collection.find().forEach((Block<Document>) document -> {
                 Clan clan = new Clan(document.getString("name"), UUID.fromString(document.getString("owner")));
                 if (document.containsKey("points")) clan.setPoints(document.getInteger("points"));

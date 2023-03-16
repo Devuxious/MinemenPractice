@@ -95,7 +95,7 @@ FIGHTS:
       - '&fTeams&7: &9<teams>'
   1V1:
     BOXING-MODE:
-      - '&fHits: &9(<hits-difference>)'
+      - '&fHits: <hits-difference>'
       - ' &fYou: &a<your-hits>'
       - ' &fThem: &9<opponent-hits>'
       - ' &fCombo: &9<combo>'

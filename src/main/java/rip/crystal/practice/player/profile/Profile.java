@@ -172,8 +172,8 @@ public class Profile {
 		// Players might have joined before the plugin finished loading
 		TaskUtil.runLater(() -> {
 			if (iProfile instanceof MongoDBIProfile) {
-				collection = cPractice.get().getMongoDatabase().getCollection("profiles");
-				for (Document document : cPractice.get().getMongoDatabase().getCollection("profiles").find()) {
+				collection = cPractice.get().getMongoConnection().getMongoDatabase().getCollection("profiles");
+				for (Document document : cPractice.get().getMongoConnection().getMongoDatabase().getCollection("profiles").find()) {
 					UUID uuid = UUID.fromString(document.getString("uuid"));
 					Profile profile = new Profile(uuid);
 

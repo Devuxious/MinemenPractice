@@ -169,6 +169,7 @@ public class cPractice extends JavaPlugin {
     @Override
     public void onDisable() {
         Profile.getProfiles().values().stream().filter(Profile::isOnline).forEach(Profile::save);
+
         if (EventGame.getActiveGame() != null) {
             if (EventGame.getActiveGame().getGameLogic() instanceof SpleefGameLogic) {
                 SpleefGameLogic event = (SpleefGameLogic) EventGame.getActiveGame().getGameLogic();
